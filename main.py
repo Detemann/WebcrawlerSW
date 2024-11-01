@@ -11,7 +11,7 @@ def getConcursos():
     if response.status_code == 200:
         if os.path.exists("oportunidades.csv"):
             os.remove("oportunidades.csv")
-
+#TesteMarques123455
         print("OK!")
         write = "Local;Descricao;Link;"
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
